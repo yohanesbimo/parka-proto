@@ -13,7 +13,7 @@ message GetCustomerReq {
 }
 
 message GetCustomerRes {
-  string customer_uuid = 1;
+  string uuid = 1;
   string email = 2;
   string name = 3;
 }
