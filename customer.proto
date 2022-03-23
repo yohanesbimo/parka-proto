@@ -1,0 +1,19 @@
+syntax="proto3";
+
+package parka_proto;
+
+option go_package="/";
+
+service Customers {
+  rpc GetCustomerByEmail(GetCustomerReq) returns (GetCustomerRes);
+}
+
+message GetCustomerReq {
+  string email = 1;
+}
+
+message GetCustomerRes {
+  string customer_uuid = 1;
+  string email = 2;
+  string name = 3;
+}
